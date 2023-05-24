@@ -3,61 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <title>CaseOne</title>
-    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link href="/assets/css/normalize.css" rel="stylesheet">
     <style>
 
-        body>div{
+        body > div {
             width: 50vw;
             height: 50vh;
-           /* border: 1px solid black;*/
+            /* border: 1px solid black;*/
             position: absolute;
         }
-        body>div:nth-child(1){
+
+        body > div:nth-child(1) {
             background-color: red;
             left: 0;
             top: 0;
         }
-        body>div:nth-child(2){
+
+        body > div:nth-child(2) {
             background-color: green;
             right: 0;
-            top:0
+            top: 0
 
         }
-        body>div:nth-child(3){
+
+        body > div:nth-child(3) {
             background-color: yellow;
             left: 0;
             bottom: 0;
         }
-        body>div:nth-child(4){
+
+        body > div:nth-child(4) {
             background-color: deeppink;
             right: 0;
             bottom: 0;
 
         }
-        body>section{
-            border: 2px solid white;
-            width: 100px;
-            height:100px;
-            z-index: 200;
-            position: relative;
-            border-radius: 100px;
+
+        body > section {
             background-color: white;
+            width: 100px;
+            height: 100px;
+            z-index: 2;
+            position: absolute;
+
         }
 
+        body > section:nth-child(5) {
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 100px
+        }
+
+        body > section:nth-child(6) {
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 100px;
+        }
+
+        body > section:nth-child(7) {
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 100px;
+
+        }
+
+        body > section:nth-child(8) {
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100px
+        }
+
+        body > section:nth-child(9) {
+            width: 200px;
+            height: 200px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > section:nth-child(10) {
+            background-color: red;
+            border-radius: 100px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+        body > section:nth-child(11){
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            top: -50px;
+            right: 0;
+            left: 0;
+            width:150px;
+            margin: auto;
+        }
+        body > section:nth-child(12){
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            right: 0;
+            left: 0;
+            width:150px;
+            bottom: -50px;
+            margin: auto;
+        }
+
+        body>div>div{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
 
 
     </style>
 </head>
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+<!--square-->
+<div>
+    <div>
+        <div class="inner"></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div class="inner"></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div class="inner"></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div class="inner"></div>
+    </div>
+</div>
+
+<!-- Edge Circle-->
+<section></section>
+<section></section>
+<section></section>
+<section></section>
+
+<!--center square-->
+<section></section>
+<!--center circle-->
+<section></section>
+<!--Top and bottom circle-->
+<section></section>
+<section></section>
 
 
-<section></section>
-<section></section>
-<section></section>
-<section></section>
 </body>
 </html>
