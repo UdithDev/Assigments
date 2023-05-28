@@ -6,7 +6,7 @@
     <link href="/assets/css/normalize.css" rel="stylesheet">
     <style>
         body > section {
-            border: 1px solid black;
+            /* border: 1px solid black;*/
             height: 100vh;
             position: relative;
         }
@@ -63,10 +63,55 @@
         }
 
         body > section:nth-child(2) {
-            border: 1px solid black;
+            /* border: 1px solid black;*/
             height: 100vh;
         }
 
+        body > section:nth-child(2) > div {
+            border: 1px solid cyan;
+            border-radius: 200px;
+            background-color: cyan;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            padding: 16px 16px 16px 16px;
+        }
+
+        body > section:nth-child(2) > div > h3 {
+            font-size: 30px;
+            color: white;
+            position: relative;
+            left: 20px;
+            top: 40px;
+        }
+
+        body > section:nth-child(3) > div {
+            border: 1px solid orangered;
+            border-radius: 200px;
+            background-color: orangered;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            padding: 16px 16px 16px 16px;
+        }
+
+        body > section:nth-child(3) > div > h2{
+            font-size: 30px;
+            color: white;
+            position: relative;
+            left: 22px;
+            top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -78,7 +123,14 @@
     </div>
 </section>
 <section>
-    <div></div>
+    <div>
+        <h3>Welcome To</h3>
+    </div>
+</section>
+<section>
+    <div>
+        <h2>Institute of Software Engineering</h2>
+    </div>
 </section>
 
 </body>
