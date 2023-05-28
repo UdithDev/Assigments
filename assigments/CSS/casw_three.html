@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Three</title>
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+    <style>
+        body > section {
+            border: 1px solid black;
+            height: 100vh;
+            position: relative;
+        }
+
+        body > section > div:first-child {
+            border: 10px solid dimgrey;
+            border-radius: 200px;
+
+            width: 250px;
+            height: 250px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > section > div:nth-child(2) {
+            border: 10px solid red;
+            border-radius: 200px;
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            padding: 16px 16px 16px 16px;
+        }
+
+        body > section > div:nth-child(3) {
+            border: 1px solid indigo;
+            border-radius: 200px;
+            background-color: indigo;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            padding: 16px 16px 16px 16px;
+        }
+
+        body > section > div:nth-child(3) > h3 {
+            font-size: 50px;
+            color: white;
+            position: relative;
+            left: 40px;
+            top: 10px;
+        }
+
+        body > section:nth-child(2) {
+            border: 1px solid black;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div>
+        <h3>Hello</h3>
+    </div>
+</section>
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>
