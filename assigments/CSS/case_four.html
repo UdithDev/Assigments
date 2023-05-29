@@ -5,21 +5,22 @@
     <title>case four</title>
     <link href="/assets/css/normalize.css" rel="stylesheet">
     <style>
+
+        /*First section start*/
         body > section:first-child {
             border: 1px solid black;
             height: 100vh;
-
         }
 
         body > section:first-child > header {
             border: 1px solid red;
             height: 50px;
+           /* width: 100vw;*/
             background-color: red;
             position: sticky;
-
         }
 
-        body > Section:first-child > h3 {
+        body > Section:first-child >header> h3 {
             position: absolute;
             margin: 0;
             top: 10px;
@@ -29,12 +30,14 @@
 
         body > section:first-child > h1 {
             font-size: 50px;
-            position: absolute;
+            position:absolute;
             left: 50%;
             top: 50%;
             margin: auto;
         }
+        /*First section End*/
 
+        /*Second section Start*/
         body > section:nth-child(2) {
             border: 1px solid black;
             height: 100vh;
@@ -55,12 +58,15 @@
             left: 10px;
             color: white;
         }
+        /*Second section End*/
     </style>
 </head>
 <body>
 <section>
-    <header></header>
-    <h3>Card 1</h3>
+    <header>
+        <h3>Card 1</h3>
+    </header>
+
     <h1>Hello</h1>
 </section>
 <section>
