@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case four</title>
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+    <style>
+        body > section:first-child {
+            border: 1px solid black;
+            height: 100vh;
+
+        }
+
+        body > section:first-child > header {
+            border: 1px solid red;
+            height: 50px;
+            background-color: red;
+            position: sticky;
+
+        }
+
+        body > Section:first-child > h3 {
+            position: absolute;
+            margin: 0;
+            top: 10px;
+            left: 10px;
+            color: white;
+        }
+
+        body > section:first-child > h1 {
+            font-size: 50px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: auto;
+        }
+
+        body > section:nth-child(2) {
+            border: 1px solid black;
+            height: 100vh;
+            /*background-color: red;*/
+            position: relative;
+        }
+
+        body > section:nth-child(2) > header {
+            border: 1px solid #005cc5;
+            height: 50px;
+            background-color: #005cc5;
+        }
+
+        body > section:nth-child(2) > h3 {
+            position: absolute;
+            margin: 0;
+            top: 10px;
+            left: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <header></header>
+    <h3>Card 1</h3>
+    <h1>Hello</h1>
+</section>
+<section>
+    <header></header>
+    <h3>Card 2</h3>
+</section>
+</body>
+</html>
