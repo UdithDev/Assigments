@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitt light system</title>
+    <style>
+        body > section:first-child {
+            width: 1000px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        body > section:nth-child(1) > div {
+            background-color: white;
+            border: 1px solid black;
+            width: 100px;
+            height: 50px;
+            flex-grow: 1;
+        }
+
+        body > section:nth-child(1) > div:nth-child(1) {
+            background-color: red;
+        }
+
+        body > section:nth-child(1) > div:nth-child(2) {
+            background-color: #c31200;
+        }
+
+        body > section:nth-child(1) > div:nth-child(3) {
+            background-color: brown;
+        }
+
+        body > section:nth-child(1) > div:nth-child(4) {
+            background-color: indianred;
+        }
+
+        body > section:nth-child(1) > div:nth-child(5) {
+            background-color: rgba(201, 164, 156, 0.79);
+        }
+
+        body > section:nth-child(2) {
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body > section:nth-child(2) > button {
+            width: 50px;
+            height: 25px;
+        }
+
+        body > section:nth-child(2) > button:nth-child(1) {
+            font-size: 15px;
+            background-color: #005cc5;
+            color: white;
+
+        }
+
+        body > section:nth-child(2) > button:nth-child(2) {
+            font-size: 15px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<section id="sec">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section>
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button>
+</section>
+
+<script src="/assets/js/jquery-3.7.0.min.js"></script>
+<script>
+    let audio = new Audio();
+    audio.src="assets/audio/Knight Rider Sms ! Knight Rider ! Theme.mp3";
+    audio.play();
+
+    let colors = [];
+    let leftColors=["white","white","white","white","rgba(201,164,156,0.79)","indianred","brown","#c31200","red"];
+    let rightColors=["white","white","white","white","red", "#c31200", " brown", "indianred", "rgba(201,164,156,0.79)"];
+
+    function animateRight(){
+        let firstValue = colors.shift();
+        colors.push(firstValue);
+    }
+    function animateLeft() {
+        let lastColor = colors.pop();
+        colors.unshift(lastColor);
+    }
+    let count=0;
+
+    function animate(){
+        count++;
+        if(count<=leftColors.length){
+            colors=leftColors;
+            animateLeft();
+        }else {
+            if(count>=(leftColors.length*2)){
+                count=0;
+            }
+            colors=rightColors;
+            animateRight();
+        }
+    }
+    function renderKnightRider(){
+        let divArray = document.querySelector("#sec").children;
+        for (let i=0;i<(colors.length/2); i++){
+            divArray[i].style.backgroundColor=colors[i];
+        }
+        animate();
+    }
+    let id;
+    $("#btnStart").click(function () {
+        clearInterval(id);
+        id =setInterval(renderKnightRider,50);
+        audio.play();
+    });
+
+    $("#btnStop").click(function () {
+        clearInterval(id);
+        audio.pause();
+    });
+
+</script>
+</body>
+</html>
