@@ -4,49 +4,98 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link href="/assets/css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <style>
+        .heading {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            font-family: 'Tilt Warp',cursive;
+        }
+        .tfContainer{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        #textField{
+            border: 2px solid black;
+            width: 35vw;
+            margin-top: 5vh;
+        }
+        #clearButton{
+            width: auto;
+            height: 2.2rem;
+            margin-top: 2.2rem;
+            margin-left: 1rem;
+            border: 2px solid black;
+        }
+        #clearButton:hover{
+            background-color: black;
+            color: white;
+        }
+        .numberButtons{
+            width: 6.25rem;
+            height: 4rem;
+            margin-right: 3.125rem;
+            margin-top: 3.125rem;
+        }
+        .buttonContainer{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .footer{
+            padding-top: 90px;
+        }
+
+    </style>
 </head>
 <body>
-<h1 class="">Calculator</h1>
-<div class="">
+<h1 class="heading">Calculator</h1>
+<div class="tfContainer">
     <div class="">
-        <input class="" id="textField" type="text">
+        <input class="control" id="textField" type="text">
     </div>
     <button class="" id="clearButton" type="button">Clear</button>
 </div>
 
-<div class="">
-    <button class="" onclick="setValue(7)" type="button">7</button>
-    <button class="" onclick="setValue(8)" type="button">8</button>
-    <button class="" onclick="setValue(9)" type="button">9</button>
-    <button class="" onclick="setValue('+')" type="button">+</button>
+<div class="buttonContainer">
+    <button class="numberButtons" onclick="setValue(7)" type="button">7</button>
+    <button class="numberButtons" onclick="setValue(8)" type="button">8</button>
+    <button class="numberButtons" onclick="setValue(9)" type="button">9</button>
+    <button class="numberButtons" onclick="setValue('+')" type="button">+</button>
 </div>
 
 
-<div class="">
-    <button class="" onclick="setValue(4)" type="button">4</button>
-    <button class="" onclick="setValue(5)" type="button">5</button>
-    <button class="" onclick="setValue(6)" type="button">6</button>
-    <button class="" onclick="setValue('-')" type="button">-</button>
+<div class="buttonContainer">
+    <button class="numberButtons" onclick="setValue(4)" type="button">4</button>
+    <button class="numberButtons" onclick="setValue(5)" type="button">5</button>
+    <button class="numberButtons" onclick="setValue(6)" type="button">6</button>
+    <button class="numberButtons" onclick="setValue('-')" type="button">-</button>
 </div>
 
-<div class="">
-    <button class="" onclick="setValue(1)" type="button">1</button>
-    <button class="" onclick="setValue(2)" type="button">2</button>
-    <button class="" onclick="setValue(3)" type="button">3</button>
-    <button class="" onclick="setValue('/')" type="button">/</button>
+<div class="buttonContainer">
+    <button class="numberButtons" onclick="setValue(1)" type="button">1</button>
+    <button class="numberButtons" onclick="setValue(2)" type="button">2</button>
+    <button class="numberButtons" onclick="setValue(3)" type="button">3</button>
+    <button class="numberButtons" onclick="setValue('/')" type="button">/</button>
 </div>
 
-<div class="">
-    <button class="" onclick="setValue(0)" type="button">0</button>
-    <button class="" onclick="setValue('.')" type="button">.</button>
-    <button class="" onclick="setValue('=')" type="button">=</button>
-    <button class="" onclick="setValue('*')" type="button">*</button>
+<div class="buttonContainer">
+    <button class="numberButtons" onclick="setValue(0)" type="button">0</button>
+    <button class="numberButtons" onclick="setValue('.')" type="button">.</button>
+    <button class="numberButtons" onclick="setValue('=')" type="button">=</button>
+    <button class="numberButtons" onclick="setValue('*')" type="button">*</button>
 </div>
 
 <!--footer-->
-<div class="">
-    <footer class="">
-        <div class="" style="background-color: rgba(0,0,0,0.2);">
+<div class="footer">
+    <footer class="text-center">
+        <div class="text-center" style="background-color: rgba(0,0,0,0.2);">
             Design By DEVDesign <br> <br>
             Udith Dev. © 2023 All Rights Reserved.
         </div>
