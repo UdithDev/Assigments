@@ -14,7 +14,7 @@
     <style>
 
         .m-4 {
-            margin: 0rem!important;
+            margin: 0rem !important;
         }
 
         #n {
@@ -25,7 +25,7 @@
         }
 
 
-        #title{
+        #title {
             margin-left: 6rem;
             margin-right: 6rem;
             font-size: 2em;
@@ -34,7 +34,7 @@
             background-color: #eeeeee;
         }
 
-        #main_section{
+        #main_section {
             margin-left: 6rem;
             margin-right: 6rem;
             font-size: 0.9em;
@@ -50,30 +50,30 @@
             /*padding-left: 1rem;*/
         }
 
-        #btnDelete{
+        #btnDelete {
             margin-left: 2rem;
         }
 
-        #btnDelete, #btnDetails, #btnClear{
+        #btnDelete, #btnDetails, #btnClear {
             color: white;
             border: 0px;
             border-radius: 5px;
-            padding: 0.5em 0.8em 0.5em 0.8em ;
+            padding: 0.5em 0.8em 0.5em 0.8em;
         }
 
-        #btnDelete{
+        #btnDelete {
             background-color: red;
         }
 
-        #btnDetails{
+        #btnDetails {
             background-color: #0d6efd;
         }
 
-        #btnClear{
+        #btnClear {
             background-color: limegreen;
         }
 
-        #customer_search_txt{
+        #customer_search_txt {
             color: white;
             background-color: limegreen;
             padding: 0.8em;
@@ -81,27 +81,27 @@
             font-size: 0.9rem;
         }
 
-        form{
-            margin-left : 1.5em;
-            margin-right : 1.5em;
+        form {
+            margin-left: 1.5em;
+            margin-right: 1.5em;
         }
 
-        #input_name{
+        #input_name {
             padding: 0.3em;
             width: 60%;
         }
 
-        #btn_search{
+        #btn_search {
             background-color: limegreen;
             color: white;
             border: 0px;
             border-radius: 5px;
-            padding: 0.5em 0.8em 0.5em 0.8em ;
+            padding: 0.5em 0.8em 0.5em 0.8em;
 
         }
 
-        #cmb_name{
-            padding: 0.5em 0.8em 0.5em 0.8em ;
+        #cmb_name {
+            padding: 0.5em 0.8em 0.5em 0.8em;
         }
 
         #btn_group {
@@ -110,26 +110,26 @@
             margin: 2vw;
         }
 
-        #tbl_div{
+        #tbl_div {
             margin-left: 3rem;
             margin-right: 3rem;
         }
 
 
-        .table{
+        .table {
             background-color: white;
         }
 
-        #tbl_headers{
+        #tbl_headers {
             background-color: #20c997;
         }
 
-        #customer_bar{
+        #customer_bar {
             display: flex;
 
         }
 
-        #btn_new_customer{
+        #btn_new_customer {
             /*padding-left: 3%;*/
             /*padding-right: 3%;*/
             background-color: dodgerblue;
@@ -140,7 +140,7 @@
 
         }
 
-        #btn_view_customer{
+        #btn_view_customer {
             background-color: #ffcd39;
             border: 0px;
             width: 10%;
@@ -148,18 +148,11 @@
         }
 
 
-        #o{
+        #o {
             height: 500px;
             width: 100px;
             /*background-color: #0d6efd;*/
         }
-
-
-
-
-
-
-
 
 
         #ui {
@@ -176,7 +169,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
 
-        #ui_content{
+        #ui_content {
             margin: 0;
             display: flex;
             justify-content: space-between;
@@ -184,47 +177,47 @@
             background-color: limegreen;
         }
 
-        #customer_txt{
+        #customer_txt {
             font-size: 0.8rem;
         }
 
-        #btn_close{
+        #btn_close {
             background-color: limegreen;
             border: 0px;
             font-size: 0.8rem;
         }
 
-        #new_customer_form{
+        #new_customer_form {
             font-size: 0.7rem;
 
         }
 
-        #cust_id, #cust_name, #cust_address, #cust_salary{
+        #cust_id, #cust_name, #cust_address, #cust_salary {
             width: 95%;
         }
 
-        #form_buttons{
+        #form_buttons {
             display: flex;
             justify-content: end;
         }
 
-        #btn_cust_save, #btn_cust_renew, #btn_cust_close{
+        #btn_cust_save, #btn_cust_renew, #btn_cust_close {
             font-size: 0.7rem;
             border: 0px;
             color: white;
             margin: 2%;
         }
 
-        #btn_cust_save{
+        #btn_cust_save {
             background-color: red;
         }
 
-        #btn_cust_renew{
+        #btn_cust_renew {
             background-color: #ffcd39;
             color: black;
         }
 
-        #btn_cust_close{
+        #btn_cust_close {
             background-color: #0d6efd;
         }
 
@@ -239,23 +232,23 @@
     <div class="m-4">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="n">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand">
+                <a class="navbar-brand" href="#">
 
                 </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="Manage_Orders.html" class="nav-item nav-link">Orders</a>
-                        <a href="Manage_Items.html" class="nav-item nav-link">Item</a>
-                        <a href="Manage_Customer.html" class="nav-item nav-link active">Customers</a>
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="Manage_Orders.html">Orders</a>
+                        <a class="nav-item nav-link" href="Manage_Items.html">Item</a>
+                        <a class="nav-item nav-link active" href="Manage_Customer.html">Customers</a>
                         <!--          <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>-->
                     </div>
                     <div class="navbar-nav ms-auto">
-                        <a href="#" class="nav-item nav-link"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
-                        <a href="#" class="nav-item nav-link"><i class="fa-solid fa-right-to-bracket"></i> Log Out</a>
+                        <a class="nav-item nav-link" href="#"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                        <a class="nav-item nav-link" href="#"><i class="fa-solid fa-right-to-bracket"></i> Log Out</a>
                     </div>
                 </div>
             </div>
@@ -277,14 +270,14 @@
     <div id="customer_search">
         <div id="customer_bar">
             <div id="customer_search_txt"> Customer Search</div>
-            <button onclick="showUI()" id="btn_new_customer" type="button">New Customer</button>
+            <button id="btn_new_customer" onclick="showUI()" type="button">New Customer</button>
             <button id="btn_view_customer" type="button">View All Customers</button>
         </div>
 
 
         <br>
         <form>
-            <input id="input_name" name="input_text" type="text" placeholder="Input Name / NIC / Tp Here "><br><br>
+            <input id="input_name" name="input_text" placeholder="Input Name / NIC / Tp Here " type="text"><br><br>
             <button id="btn_search" type="button">Search</button>
             <select id="cmb_name" name="cmb_name">
                 <option value="1">Name</option>
@@ -298,11 +291,10 @@
 
 
     <div id="btn_group">
-        <button id="btnDelete" type="button">save</button>
+        <button id="btnCusSave" type="button">save</button>
         <button id="btnDetails" type="button">update</button>
         <button id="btnClear" type="button">delete</button>
     </div>
-
 
 
     <div id="tbl_div">
@@ -310,40 +302,17 @@
             <caption>List of Customers</caption>
             <thead>
             <tr id="tbl_headers">
-                <th scope="col">No</th>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
                 <th scope="col">Address</th>
                 <th scope="col">Salary</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>C001</td>
-                <td>Udith</td>
-                <td>Kalutara</td>
-                <td>12000</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>C002</td>
-                <td>Dev</td>
-                <td>Galle</td>
-                <td>15000</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>C003</td>
-                <td>Chamod</td>
-                <td>Galle</td>
-                <td>10000</td>
-            </tr>
+            <tbody id="tblCustomer">
+
             </tbody>
         </table>
     </div>
-
-
 
 
 </section>
@@ -353,21 +322,21 @@
     <div id="ui">
         <div id="ui_content">
             <p id="customer_txt"> New Customer </p>
-            <button onclick="hideUI()" id="btn_close" > X </button>
+            <button id="btn_close" onclick="hideUI()"> X</button>
         </div>
 
         <form id="new_customer_form">
             <br>
-            <label for="cust_id">Customer ID :  </label><br>
+            <label for="cust_id">Customer ID : </label><br>
             <input id="cust_id" name="c_id" type="text"><br><br>
 
-            <label for="cust_name">Customer Name :  </label><br>
+            <label for="cust_name">Customer Name : </label><br>
             <input id="cust_name" name="c_name" type="text"><br><br>
 
-            <label for="cust_address">Customer Address :  </label><br>
+            <label for="cust_address">Customer Address : </label><br>
             <input id="cust_address" name="c_address" type="text"><br><br>
 
-            <label for="cust_salary">Customer Salary :  </label><br>
+            <label for="cust_salary">Customer Salary : </label><br>
             <input id="cust_salary" name="c_salary" type="text"><br><br>
 
         </form>
@@ -375,7 +344,7 @@
         <hr>
 
         <div id="form_buttons">
-            <button id="btn_cust_save" type="button"> Save </button>
+            <button id="btn_cust_save" type="button"> Save</button>
             <button id="btn_cust_renew" type="button">Renew</button>
             <button id="btn_cust_close" type="button">Close</button>
         </div>
@@ -388,17 +357,211 @@
         function showUI() {
             document.getElementById("ui").style.display = "block";
         }
+
         function hideUI() {
             document.getElementById("ui").style.display = "none";
         }
 
-        $
+        document.getElementById("btn_cust_save").addEventListener("click", function () {
+            let id = document.getElementById("cust_id").value;
+            let name = document.getElementById("cust_name").value;
+            let address = document.getElementById("cust_address").value;
+            let salary = document.getElementById("cust_salary").value;
 
+
+            console.log(id, name, address, salary);
+
+
+            let tBody = document.getElementById("tblCustomer");
+
+            let tr = document.createElement("tr");
+
+            let col1 = document.createElement("td");
+            let col2 = document.createElement("td");
+            let col3 = document.createElement("td");
+            let col4 = document.createElement("td");
+
+            col1.textContent = id;
+            col2.textContent = name;
+            col3.textContent = address;
+            col4.textContent = salary;
+
+            tr.appendChild(col1);
+            tr.appendChild(col2);
+            tr.appendChild(col3);
+            tr.appendChild(col4);
+
+            tBody.appendChild(tr);
+
+        });
+
+        //logic for spa
+    </script>
+
+    <!--Customer Manage-->
+    <script>
+
+        var customerDB=[];//literal base array
+
+        $("#btn_cust_save").click(function (){
+
+            let customerID=$("#cust_id").val;
+            let customerName =$("#cust_name").val;
+            let customerAddress=$("#cust_address").val;
+            let customerSalary=$("#cust_salary").val;
+
+
+
+
+            let customerOb = {
+                id: customerID,
+                name: customerName,
+                address: customerAddress,
+                salary: customerSalary
+            }
+
+            customerDB.push(customerOb);
+            getAllCustomers();
+        });
+
+        function getAllCustomers(){
+            //clear all tbody data before add
+            $("#tblCustomer").empty();
+
+
+            for (let i=0; i<customerDB.length; ){
+                let id=customerDB[i].id;
+                let name=customerDB[i].name;
+                let address=customerDB[i].address;
+                let salary=customerDB[i].salary;
+
+                let row = `<tr>
+                     <td>${id}</td>
+                     <td>${name}</td>
+                     <td>${address}</td>
+                     <td>${salary}</td>
+                    </tr>`;
+
+
+                $("#tblCustomer").append(row);
+
+                bindTrEvents();
+
+            }
+        }
+
+        $("#btn_view_customer").click(function () {
+            getAllCustomers();
+        });
+
+        function bindTrEvents(){
+            $("#tblCustomer>tr").click(function (){
+                let id=$(this).children().eq(0).text();
+                let name=$(this).children().eq(1).text();
+                let address=$(this).children().eq(2).text();
+                let salary=$(this).children().eq(3).text();
+
+                //set the selected rows data to the input fields
+
+
+                $("#cust_id").val(id);
+                $("#cust_name").val(name);
+                $("#cust_address").val(address);
+                $("#cust_salary").val(salary);
+            });
+        }
+
+        //delete btn event
+        $("#btn_cust_close").click(function (){
+            let id=$("#cust_id").val();
+
+            let consent=confirm("Do you want to delete ?");
+            if(consent){
+                let response=deleteCustomer(id);
+                if(response){
+                    alert("Customer Deleted");
+                    getAllCustomers();
+                }else{
+                    alert("Customer Not Removed");
+                }
+            }
+        });
+
+        //update Customer
+
+
+        $("#btnUpdate").click(function (){
+            let id= $("#cust_id").val();
+            updateCustomer(id);
+        });
+
+        function getAllCustomers() {
+            //clear all tbody data before add
+            $("#tblCustomer").empty();
+
+            for (let i = 0; i < customerDB.length; i++) {
+                let id = customerDB[i].id;
+                let name = customerDB[i].name;
+                let address = customerDB[i].address;
+                let salary = customerDB[i].salary;
+
+                let row = `<tr>
+                     <td>${id}</td>
+                     <td>${name}</td>
+                     <td>${address}</td>
+                     <td>${salary}</td>
+                    </tr>`;
+
+                // //and then append the row to tableBody
+                $("#tblCustomer").append(row);
+
+
+                bindTrEvents();
+            }
+        }
+        function deleteCustomer(id){
+            for (let i = 0; i < customerDB.length; i++) {
+                if (customerDB[i].id == id) {
+                    customerDB.splice(i,1);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function searchCustomer(id){
+            return customerDB.find(function (customer){
+                //if the search id match with customer record
+                //then return that object
+                return  customer.id==id;
+            });
+        }
+
+
+        function updateCustomer(id){
+            if (searchCustomer(id)==undefined) {
+                alert("No such Customer..please check the ID");
+            }else{
+                let consent= confirm("Do you really want to update this customer.?");
+                if (consent) {
+                    let customer= searchCustomer(id);
+                    //if the customer available can we update.?
+
+                    let customerName = $("#cust_id").val();
+                    let customerAddress = $("#cust_name").val();
+                    let customerSalary = $("#cust_salary").val();
+
+                    customer.name=customerName;
+                    customer.address=customerAddress;
+                    customer.salary=customerSalary;
+
+                    getAllCustomers();
+                }
+            }
+        }
     </script>
 
 </section>
-
-
 
 
 <!--<div id="o"></div>-->
